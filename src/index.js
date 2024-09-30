@@ -5,7 +5,7 @@ import serverless from "serverless-http";
 import * as db from "./handledb.js";
 // import { mw1, mw2, mw3 } from "./middlewares.js";
 
-const PORT = 3000;
+//const PORT = 3000;
 const app = express();
 
 const validations = [
@@ -38,8 +38,8 @@ app.post('/.netlify/functions/movies', validations, async (req, res)=>{
 
 })
 
-app.listen(PORT, ()=>{
-    console.log('Listening on port', PORT)
-});
+//app.listen(PORT, ()=>{
+//    console.log('Listening on port', PORT)
+//});
 
 export const handler = serverless(app);
