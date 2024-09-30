@@ -5,4 +5,6 @@
   force = true
   from = "/movies/*"
   status = 200
-  to = "/.netlify/functions/movies/:splat"
+  to = "/.netlify/functions/movies/:splat
+[build]
+  functions = "functions"
