@@ -1,8 +1,0 @@
-[[redirects]]
-  force = true
-  from = "/movies/*"
-  status = 200
-  to = "/.netlify/functions/movies/:splat"
-[build]
-  functions = "src"
-  node_bundler = "esbuild"
