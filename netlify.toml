@@ -7,4 +7,4 @@
   status = 200
   to = "/.netlify/functions/movies/:splat"
 [build]
-  functions = "functions"
+  functions = "src"
